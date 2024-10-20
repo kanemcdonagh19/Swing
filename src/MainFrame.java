@@ -25,6 +25,7 @@ public class MainFrame extends JFrame {
         lbWelcome = new JLabel();
         lbWelcome.setFont(mainFont);
         lbWelcome.setHorizontalAlignment(SwingConstants.CENTER);
+        lbWelcome.setForeground(Color.WHITE);
         lbWelcome.setBorder(new EmptyBorder(10, 0, 10, 0)); // Add some spacing
 
         // Buttons Panel
@@ -33,7 +34,7 @@ public class MainFrame extends JFrame {
         // Main Panel Setup
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
-        mainPanel.setBackground(new Color(51, 153, 255)); // Blue background
+        mainPanel.setBackground(new Color(17, 18, 22)); // Blue background
         mainPanel.setBorder(new EmptyBorder(15, 15, 15, 15)); // Add padding around the main panel
         mainPanel.add(formPanel, BorderLayout.NORTH);
         mainPanel.add(lbWelcome, BorderLayout.CENTER);
