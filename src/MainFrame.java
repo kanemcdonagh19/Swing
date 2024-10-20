@@ -44,7 +44,7 @@ public class MainFrame extends JFrame {
 
         setTitle("Welcome");
         setSize(500, 600);
-        setMinimumSize(new Dimension(500, 500));
+        setMinimumSize(new Dimension(800, 800));
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLocationRelativeTo(null); // Center the window on the screen
         setVisible(true);
