@@ -26,7 +26,7 @@ public class MainFrame extends JFrame {
         lbWelcome.setFont(mainFont);
         lbWelcome.setHorizontalAlignment(SwingConstants.CENTER);
         lbWelcome.setForeground(Color.WHITE);
-        lbWelcome.setBorder(new EmptyBorder(10, 0, 10, 0)); // Add some spacing
+        lbWelcome.setBorder(new EmptyBorder(10, 0, 10, 0));
 
         // Buttons Panel
         JPanel buttonsPanel = createButtonsPanel();
@@ -34,8 +34,8 @@ public class MainFrame extends JFrame {
         // Main Panel Setup
         JPanel mainPanel = new JPanel();
         mainPanel.setLayout(new BorderLayout());
-        mainPanel.setBackground(new Color(17, 18, 22)); // Blue background
-        mainPanel.setBorder(new EmptyBorder(15, 15, 15, 15)); // Add padding around the main panel
+        mainPanel.setBackground(new Color(17, 18, 22));
+        mainPanel.setBorder(new EmptyBorder(15, 15, 15, 15));
         mainPanel.add(formPanel, BorderLayout.NORTH);
         mainPanel.add(lbWelcome, BorderLayout.CENTER);
         mainPanel.add(buttonsPanel, BorderLayout.SOUTH);
@@ -46,7 +46,7 @@ public class MainFrame extends JFrame {
         setSize(400, 500);
         setMinimumSize(new Dimension(400, 500));
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); // Center the window on the screen
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 
@@ -76,16 +76,15 @@ public class MainFrame extends JFrame {
     private JPanel createButtonsPanel() {
         JButton btnOK = new JButton("OK");
         btnOK.setFont(mainFont);
-        btnOK.setForeground(Color.BLACK); // Use black for the text color for better visibility
         btnOK.setFocusPainted(false);
-        btnOK.setContentAreaFilled(true); // Ensure content area is filled
+        btnOK.setContentAreaFilled(true);
         btnOK.addActionListener(this::handleOkButton);
 
         JButton btnClear = new JButton("Clear");
         btnClear.setFont(mainFont);
-        btnClear.setForeground(Color.BLACK); // Use black for the text color for better visibility
+        btnClear.setForeground(Color.BLACK);
         btnClear.setFocusPainted(false);
-        btnClear.setContentAreaFilled(true); // Ensure content area is filled
+        btnClear.setContentAreaFilled(true);
         btnClear.addActionListener(e -> clearForm());
 
         JPanel buttonsPanel = new JPanel();
